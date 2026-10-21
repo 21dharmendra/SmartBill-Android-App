@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Professional Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#173F73"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMARTBILL  /  RECORDS"
+            android:textColor="#BBD7FF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill History"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View your previous bills and payment records."
+            android:textSize="13sp"
+            android:textColor="#DFEAF8"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Bill Count Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_product_card"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BILL SUMMARY"
+                android:textColor="#667085"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"/>
+
+            <TextView
+                android:id="@+id/txtBillCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Bills: 0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#173F73"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your transaction history in one place"
+                android:textSize="12sp"
+                android:textColor="#667085"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <!-- History Section Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Previous Bills"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#17324D"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Bill List Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@drawable/bg_product_card"
+            android:elevation="2dp">
+
+            <ListView
+                android:id="@+id/listBillHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="8dp"
+                android:divider="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:clipToPadding="false"
+                android:paddingBottom="4dp"/>
+
+            <!-- Empty History Message -->
+            <TextView
+                android:id="@+id/txtEmptyHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No bills found."
+                android:textSize="15sp"
+                android:textColor="#667085"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="24dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Premium Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#173F73"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMARTBILL  /  INVENTORY"
+                android:textColor="#BBD7FF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Products"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Organize your products and pricing in one place."
+                android:textColor="#DFEAF8"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <!-- Add Product Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="@drawable/bg_product_card"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add a new product"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#172B4D"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter the product details below."
+                    android:textSize="13sp"
+                    android:textColor="#718096"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Product Name -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PRODUCT NAME"
+                    android:textColor="#52627A"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/etProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="e.g. Basmati Rice"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:textSize="15sp"
+                    android:textColor="#172B4D"
+                    android:textColorHint="#9AA6B7"
+                    android:background="@drawable/bg_product_input"/>
+
+                <!-- Product Price -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SELLING PRICE (₹)"
+                    android:textColor="#52627A"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/etProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="e.g. 120.00"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:textSize="15sp"
+                    android:textColor="#172B4D"
+                    android:textColorHint="#9AA6B7"
+                    android:background="@drawable/bg_product_input"/>
+
+                <!-- Opening Stock Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OPENING STOCK (QUANTITY)"
+                    android:textColor="#52627A"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Opening Stock Input -->
+                <EditText
+                    android:id="@+id/etProductStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="e.g. 50"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:textSize="15sp"
+                    android:textColor="#172B4D"
+                    android:textColorHint="#9AA6B7"
+                    android:background="@drawable/bg_product_input"/>
+
+                <!-- Low Stock Threshold Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOW STOCK ALERT AT"
+                    android:textColor="#52627A"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Low Stock Threshold Input -->
+                <EditText
+                    android:id="@+id/etLowStockThreshold"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="e.g. 5"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:textSize="15sp"
+                    android:textColor="#172B4D"
+                    android:textColorHint="#9AA6B7"
+                    android:background="@drawable/bg_product_input"/>
+
+                <!-- Add Button -->
+                <Button
+                    android:id="@+id/btnAddProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="22dp"
+                    android:text="+   Add Product"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_add_product_button"
+                    android:backgroundTint="@null"
+                    android:stateListAnimator="@null" />
+            </LinearLayout>
+
+            <!-- Product List Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Products"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#17324D" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Long-press a product to delete it."
+                    android:textSize="13sp"
+                    android:textColor="#667085"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+            <!-- Product List Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/bg_product_card"
+                android:elevation="2dp">
+
+                <ListView
+                    android:id="@+id/listProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#E9EEF5"
+                    android:dividerHeight="1dp"
+                    android:background="@android:color/transparent"
+                    android:scrollbars="none"
+                    android:nestedScrollingEnabled="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

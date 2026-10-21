@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPI Payment"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#172B4D"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/txtUpiBillNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bill No: SB1"
+            android:textSize="16sp"
+            android:textColor="#344054"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/txtUpiAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount: ₹0.00"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#087443"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/txtUpiId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPI ID"
+            android:textSize="15sp"
+            android:textColor="#344054"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <ImageView
+            android:id="@+id/imgUpiQrCode"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:contentDescription="UPI payment QR code"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ask the customer to scan this QR code and complete the payment."
+            android:textSize="14sp"
+            android:textColor="#667085"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnOpenUpiApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open UPI Payment App"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnConfirmUpiPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Payment Received"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnCancelUpiBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Cancel Pending Bill"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F" />
+
+    </LinearLayout>
+
+
+</ScrollView>
