@@ -1,72 +1,69 @@
 # SmartBill — Android Billing App
 
-A Java-based Android application designed to help small business owners manage products and prepare customer bills from a mobile device.
-
-> **Project type:** Android application · **Primary language:** Java · **Local storage:** SQLite
-
-## Overview
-
-SmartBill aims to simplify day-to-day billing for small shops by bringing product management and bill calculation into one mobile app. The project is built with Android Studio, Java, and XML layouts, with SQLite used for local data storage.
+A Java-based Android application designed to help small business owners manage products, prepare bills, track payment status, and review sales from a mobile device.
 
 ## Features
 
-- **Product management** — maintain a list of products and prices.
-- **Billing and totals** — select products and calculate bill amounts.
-- **Quantity controls** — adjust quantities while preparing a bill.
-- **Discount support** — account for discounts during billing.
-- **Local database** — store product and bill records using SQLite.
-- **Payment QR code** — provide a QR code in the billing workflow.
-- **WhatsApp sharing** — share bill details with customers.
-
-*Feature availability depends on the current implementation and configuration of the app.*
+- Product and stock management
+- Billing cart with quantity controls and total calculation
+- Cash and UPI QR payment workflows
+- Pending-payment review
+- Bill history and receipt viewing
+- Invoice generation and receipt sharing
+- Sales dashboard and analytics
+- Local data storage using SQLite
 
 ## Technology Stack
 
-| Area | Technology |
-|---|---|
-| Programming language | Java |
-| Android development | Android Studio, Android SDK |
-| UI | XML layouts |
-| Local persistence | SQLite |
-| Version control | Git and GitHub |
-
-## Getting Started
-
-### Prerequisites
-
-- Android Studio
-- A compatible Android SDK installed through Android Studio
-- An Android emulator or Android device
-
-### Run locally
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/21dharmendra/SmartBill-Android-App.git
-   ```
-2. Open the project folder in Android Studio.
-3. Allow Gradle to sync and install any required SDK components.
-4. Select an emulator or connect an Android device with USB debugging enabled.
-5. Click **Run** in Android Studio.
+- **Language:** Java
+- **IDE:** Android Studio
+- **UI:** XML / Android UI components
+- **Local persistence:** SQLite
+- **Version control:** Git and GitHub
 
 ## Screenshots
 
-Screenshots will be added here to demonstrate the product list, billing flow, and payment/bill-sharing screens.
+The screenshots below showcase the app's current UI. Open the `screenshots/` folder to view all images.
 
-## Project Structure
+### Home dashboard
+![SmartBill home dashboard](screenshots/10-home-dashboard.jpeg)
 
-This is an Android Studio project. The main application source and resources are expected under the `app/` module; Gradle files configure the build. Open the project in Android Studio for the complete module structure.
+### Product management
+![Product management](screenshots/06-product-management.jpeg)
 
-## Learning Outcomes
+### Billing cart
+![Billing cart](screenshots/08-billing-cart.jpeg)
 
-This project demonstrates practical experience with Android UI development, Java application logic, local database operations, and version control using Git/GitHub.
+### UPI payment
+![UPI payment](screenshots/04-upi-payment.jpeg)
+
+### Pending payments
+![Pending payments](screenshots/01-pending-payments.jpeg)
+
+### Bill history
+![Bill history](screenshots/02-bill-history.jpeg)
+
+### Payment receipt
+![Payment receipt](screenshots/03-payment-receipt.jpeg)
+
+### Sales analytics
+![Sales analytics](screenshots/11-sales-analytics.jpeg)
+
+## Getting Started
+
+1. Install Android Studio and the Android SDK.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/21dharmendra/SmartBill-Android-App.git
+   ```
+3. Open the project in Android Studio.
+4. Allow Gradle to sync and install any required SDK components.
+5. Run the app on an emulator or a connected Android device.
 
 ## Author
 
-**Dharmendra Goswami**
-
-- GitHub: [@21dharmendra](https://github.com/21dharmendra)
+**Dharmendra Goswami** · [GitHub profile](https://github.com/21dharmendra)
 
 ---
 
-If you find an issue or have a suggestion, feel free to open a GitHub issue.
+This project demonstrates Android app development, local database operations, billing workflows, and Git-based project management. Payment status should only be considered confirmed when verified through the app's actual payment-confirmation workflow.
