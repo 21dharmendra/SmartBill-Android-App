@@ -1,50 +1,72 @@
-# SmartBill – Android Billing Application
+# SmartBill — Android Billing App
 
-SmartBill is an Android application designed to help small business owners manage products, generate bills, and simplify the billing process.
+A Java-based Android application designed to help small business owners manage products and prepare customer bills from a mobile device.
 
-## 🚀 Features
+> **Project type:** Android application · **Primary language:** Java · **Local storage:** SQLite
 
-- **Product Management:** Add and manage products with their prices.
-- **Billing System:** Select products and calculate the total bill.
-- **Quantity Management:** Increase or decrease product quantities.
-- **Discount Support:** Apply discounts to bills.
-- **Bill History:** Store billing records locally.
-- **QR Code:** Display a QR code for convenient payment.
-- **WhatsApp Sharing:** Share bill details with customers through WhatsApp.
-- **Offline Storage:** Use SQLite to store product and billing data locally.
+## Overview
 
-## 🛠️ Technologies Used
+SmartBill aims to simplify day-to-day billing for small shops by bringing product management and bill calculation into one mobile app. The project is built with Android Studio, Java, and XML layouts, with SQLite used for local data storage.
 
-- Java
+## Features
+
+- **Product management** — maintain a list of products and prices.
+- **Billing and totals** — select products and calculate bill amounts.
+- **Quantity controls** — adjust quantities while preparing a bill.
+- **Discount support** — account for discounts during billing.
+- **Local database** — store product and bill records using SQLite.
+- **Payment QR code** — provide a QR code in the billing workflow.
+- **WhatsApp sharing** — share bill details with customers.
+
+*Feature availability depends on the current implementation and configuration of the app.*
+
+## Technology Stack
+
+| Area | Technology |
+|---|---|
+| Programming language | Java |
+| Android development | Android Studio, Android SDK |
+| UI | XML layouts |
+| Local persistence | SQLite |
+| Version control | Git and GitHub |
+
+## Getting Started
+
+### Prerequisites
+
 - Android Studio
-- XML for UI design
-- SQLite Database
-- Android SDK
+- A compatible Android SDK installed through Android Studio
+- An Android emulator or Android device
 
-## 📱 Application Screenshots
+### Run locally
 
-Add screenshots of your application here as you finalize the repository.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/21dharmendra/SmartBill-Android-App.git
+   ```
+2. Open the project folder in Android Studio.
+3. Allow Gradle to sync and install any required SDK components.
+4. Select an emulator or connect an Android device with USB debugging enabled.
+5. Click **Run** in Android Studio.
 
-## ⚙️ How to Run
+## Screenshots
 
-1. Clone or download this repository.
-2. Open the project in Android Studio.
-3. Allow Gradle to sync.
-4. Connect an Android device or start an emulator.
-5. Click **Run** to launch the application.
+Screenshots will be added here to demonstrate the product list, billing flow, and payment/bill-sharing screens.
 
-## 💾 Database
+## Project Structure
 
-SmartBill uses SQLite for local data storage, including product information and billing records.
+This is an Android Studio project. The main application source and resources are expected under the `app/` module; Gradle files configure the build. Open the project in Android Studio for the complete module structure.
 
-## 🎯 Project Objective
+## Learning Outcomes
 
-The objective of SmartBill is to provide small business owners with a simple, affordable, and convenient digital billing solution.
+This project demonstrates practical experience with Android UI development, Java application logic, local database operations, and version control using Git/GitHub.
 
-## 👨‍💻 Author
+## Author
 
-Dharmendra Goswami
+**Dharmendra Goswami**
 
-## 📄 License
+- GitHub: [@21dharmendra](https://github.com/21dharmendra)
 
-This project is available for educational and learning purposes.
+---
+
+If you find an issue or have a suggestion, feel free to open a GitHub issue.
